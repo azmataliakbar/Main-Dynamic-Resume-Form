@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1><u>Dynamic Resume Builder</u></h1>
+
+    <div class="my-image" id="displayImageContainer">
+      <img
+        src=""
+        alt="Uploaded Image"
+        id="displayImage"
+        class="hidden"
+      />
+    </div>
+
+    <div>
+      <form id="resumeForm">
+        <label class="labeling" for="imageUpload">Upload Image:</label>
+        <input type="file" id="imageUpload" accept="image/*"><br><br>
+
+        <label class="labeling" for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label class="labeling" for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label class="labeling" for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label class="labeling" for="education">Education:</label>
+        <textarea id="education" rows="4" cols="50" required></textarea><br><br>
+
+        <label class="labeling" for="skills">Skills:</label>
+        <textarea id="skills" rows="4" cols="50" required></textarea><br><br>
+
+        <label class="labeling" for="workExperience">Work Experience:</label>
+        <textarea id="workExperience" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit"><b>Generate Resume</b></button>
+      </form>
+    </div>
+    <br>
+    <div id="resume">
+      <h1 id="resume-heading"><b><u>Generated Resume</u></b></h1>
+    </div>
+    <br>
+
+    <h5><b>Author: Azmat Ali</b></h5>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
